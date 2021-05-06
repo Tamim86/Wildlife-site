@@ -1,11 +1,30 @@
-var firstName = prompt('What is Your First Name')
-var email = prompt ('Enter Your email')
-var hobby = prompt ('What would you like to do?')
-console.log (firstName +' '+ hobby)
-if (hobby=== 'sleep'){
-  document.write ('<h5>'+'You Are Lazy'+ '</h5>')
-} else {
-  document.write ('Have a Nice Day ' + firstName )
-}
+var name = prompt (' Please enter your first name')
+var passWord = prompt ('Please enter your Password')
+while (passWord !== '678910') {
+  alert ('Wrong! Try Again')
+  console.log ('Try Again')
+  passWord = prompt ('Please enter your Password')
 
-confirm ('Click yes to donate 1000$')
+}
+document.write ('Welcome' + name)
+
+var favAnim = prompt('Please pick your Favorite Animal')
+var image = ''
+var rate = prompt ('Rate our website from 1-10?')
+
+if (favAnim == 'Horse'){
+  image = '<img src= "https://vid.alarabiya.net/images/2017/09/02/039d0037-72b5-4401-b0ef-6f8cfa471c0f/039d0037-72b5-4401-b0ef-6f8cfa471c0f.jpg">'
+}
+  else if (favAnim == 'Lion'){
+    image = '<img src= "https://www.thesun.co.uk/wp-content/uploads/2020/11/crop-13290526.jpg">'
+  }
+    else { 
+      document.write('Your Favorite Animal is not available')
+  }
+  document.write (image)
+
+
+for(i='2'; i <= rate; i++){
+  document.write(image) 
+  
+}
