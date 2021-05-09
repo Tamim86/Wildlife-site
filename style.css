@@ -38,8 +38,16 @@ main h2 a {
 
 
 }
+.mainp {
+  color: lightblue
+}
 
 Myth-Creatures header h1 {
   color: green
 }
 
+
+#par1 {
+  font-size: larger;
+  color: green;
+}
